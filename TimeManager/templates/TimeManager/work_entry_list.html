@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}Work Entries{% endblock %}
+
+{% block content %}
+  <h2>Work Entries</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Job Title</th>
+        <th>Hours Worked</th>
+        <th>Date</th>
+        <th>Comment</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for entry in work_entries %}
+        <tr>
+          <td>{{ entry.job_title }}</td>
+          <td>{{ entry.hours_worked }}</td>
+          <td>{{ entry.date }}</td>
+          <td>{{ entry.comment }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}
