@@ -4,5 +4,5 @@ from django.http import HttpResponse
 
 
 # Create your views here.
-def index(request):
+def main_menu(request):
     return render(request, 'main/main.html')

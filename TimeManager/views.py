@@ -5,8 +5,6 @@ from .forms import WorkEntryForm
 from .models import WorkEntry
 
 
-
-
 def add_work_entry(request):
     if request.method == 'POST':
         form = WorkEntryForm(request.POST)

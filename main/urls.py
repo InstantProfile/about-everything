@@ -1,6 +1,6 @@
 from django.urls import path, include
 from . import views
 urlpatterns = [
-    path('', views.index, name='main'),
+    path('', views.main_menu, name='main'),
     path('timemanager/', include('TimeManager.urls')),
 ]

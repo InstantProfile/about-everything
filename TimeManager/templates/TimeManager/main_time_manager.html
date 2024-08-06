@@ -17,23 +17,9 @@
                             <a class="nav-link" href="{% url item.url %}">{{ item.name }}</a>
                         </li>
                     {% endfor %}
-<!--                    <li class="nav-item">-->
-<!--                        <a class="nav-link" href="{% url 'main' %}">Home</a>-->
-<!--                    </li>-->
-<!--                    <li class="nav-item">-->
-<!--                        <a class="nav-link" href="{% url 'add_work_entry' %}/">Add Work Entry</a>-->
-<!--                    </li>-->
-<!--                    <li class="nav-item">-->
-<!--                        <a class="nav-link" href="{% url 'work_entry_list' %}">List Work Entry</a>-->
-<!--                    </li>-->
                 </ul>
             </div>
         </div>
     </nav>
     <h1>приложение Timemanager</h1>
 {% endblock navbar %}
-                    {% for item in menu %}
-                        <li class="nav-item">
-                        <a class="nav-link" href="{% url item.url %}">{{ item.name }}</a>
-                    </li>
-                    {% endfor %}
