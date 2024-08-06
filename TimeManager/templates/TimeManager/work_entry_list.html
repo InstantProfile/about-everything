@@ -8,9 +8,10 @@
     <thead>
       <tr>
         <th>Job Title</th>
-        <th>Hours Worked</th>
-        <th>Date</th>
+        <th>Hours</th>
+        <th>Hourly rate</th>
         <th>Comment</th>
+        <th>Date</th>
       </tr>
     </thead>
     <tbody>
@@ -18,8 +19,9 @@
         <tr>
           <td>{{ entry.job_title }}</td>
           <td>{{ entry.hours_worked }}</td>
-          <td>{{ entry.date }}</td>
+          <td>{{ entry.hourly_rate }}</td>
           <td>{{ entry.comment }}</td>
+          <td>{{ entry.date }}</td>
         </tr>
       {% endfor %}
     </tbody>
