@@ -46,6 +46,8 @@ INSTALLED_APPS = [
     # Приложения
     'TimeManager.apps.TimeManagerConfig',
     'main.apps.MainConfig',
+    'accounts.apps.AccountsConfig',
+
 
     # Библиотеки
     'crispy_forms',

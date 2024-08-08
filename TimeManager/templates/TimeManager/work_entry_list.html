@@ -4,6 +4,14 @@
 
 {% block content %}
     <h2>Work Entries</h2>
+    <!-- Отладочный вывод для проверки содержимого переменной work_entries -->
+    <h3>Debug Info:</h3>
+    <pre>{{ work_entries|pprint }}</pre>
+    <pre>{{ work_entries }}</pre>
+    {% for entry in work_entries %}
+        {{ entry }}
+    {% endfor %}
+        43
     <table id="workEntriesTable" class="table table-striped table-bordered">
         <thead>
         <tr>

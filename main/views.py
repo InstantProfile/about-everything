@@ -1,8 +1,6 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
 
-
-# Create your views here.
 def main_menu(request):
-    return render(request, 'main/main.html')
+    menu = ['Главная', 'Меню', 'Вход', 'Выход', 'Регистрация']
+    return render(request, 'main/main.html', {'menu': menu})

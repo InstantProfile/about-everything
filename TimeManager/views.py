@@ -1,3 +1,6 @@
+# main/views.py или где находятся ваши представления
+from django.contrib.auth.decorators import login_required
+# ----------------------------------------------------
 from django.shortcuts import render, redirect
 from django.views.generic import ListView
 
@@ -29,3 +32,9 @@ def index(request):
         {'name': 'Просмотреть', 'url': 'work_entry_list'}
     ]
     return render(request, 'TimeManager/main_time_manager.html', {'menu': menu})
+
+
+# main/views.py или где находятся ваши представления
+@login_required
+def your_view(request):
+    pass

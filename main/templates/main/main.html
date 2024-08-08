@@ -1,6 +1,15 @@
 {% extends 'base.html' %}
 
+
+{% block main_link %}
+    <h1>Страница main.html</h1>
+    <a href="{% url 'main_timemanager' %}">Time manager</a>
+    {% for item in menu %}
+        {{ item }}
+    {% endfor %}
+{% endblock main_link %}
+
 {% block content %}
-<h1>Страница main.html</h1>
-<a href="{% url 'main_timemanager' %}">Time manager</a>
+
+
 {% endblock content %}
